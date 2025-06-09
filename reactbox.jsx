@@ -1,23 +1,21 @@
 import React from 'react'; 
-
-
 function Box(props) {
   return (
-   
+    
     <div
-     
+      
       key={props.boxNumber}
       
       className="
         w-[80px] h-[80px] bg-black               
         sm:w-[96px] sm:h-[96px] sm:bg-red-500     
         md:w-[128px] md:h-[128px] md:bg-blue-500 
-        rounded-lg                              
+        rounded-lg                             
         flex items-center justify-center        
         text-black                              
         text-sm                                 
         font-semibold                           
-        shadow-md                             
+        shadow-md                               
         shrink-0                               
       "
     >
@@ -27,12 +25,11 @@ function Box(props) {
   );
 }
 
-
 function App() {
   return (
-   
+    
     <div className="bg-gray-100 min-h-screen flex items-center justify-center p-4 font-sans">
-     
+      
       <div className="flex flex-wrap gap-4 p-6 bg-white rounded-xl shadow-lg max-w-6xl mx-auto">
        
         <Box boxNumber={1} />
